@@ -1,4 +1,4 @@
-const repoName = "/tesya-makeup-artist";
+const repoName = "";
 
 // Load Navbar
 fetch(`${repoName}/components/navbar.html`)
