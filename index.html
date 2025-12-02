@@ -1121,6 +1121,20 @@
         });
     </script>
 
+    <script>
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbar = document.getElementById('navMenu');
+                const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+
+                if (bsCollapse) {
+                    bsCollapse.hide(); // Tutup nav
+                }
+            });
+        });
+    </script>
+
+
 <script src="js/include.js"></script>
 </body>
 
